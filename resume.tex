@@ -1,0 +1,246 @@
+% Ross_Guarino.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2009 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
+% (c) 2012 William M. Ziener-Dignazio <slackwill@csh.rit.edu> http://csh.rit.edu/~slackwill
+% (c) 2014 Ross L. Guarino <rssguar@gmail.com> http://rlguarino.com
+%
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{tabularx}
+\usepackage{latexsym}
+\usepackage{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=mygreylink     % can put red here to visualize the links 
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.30}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\restwoheading}[2]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		{#3} & {#4} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\restwosubheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+\begin{document} 
+
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r} \\
+	\textbf{\href{http://www.rlguarino.com/}{\large Ross L. Guarino}} & \href{mailto:rlguarino@gmail.com}{rlguarino@gmail.com}\\ &
+	\href{http://rlguarino.com/}{rlguarino.com} \\ \vspace{-10mm} \\
+	{\footnotesize {{Current: 230 Hendrix Ave,
+West Henrietta, NY 14586}}} & \\
+	{\footnotesize {{Home: 285 Crosby Ave, Kenmore, NY 14217}}} & \\
+	{\footnotesize {{Phone: (716) 982-2597}}} 	\end{tabular*}
+\\
+\vspace{0.1in}}
+
+% CHANGE HEADER SOURCE HERE
+\mywebheader
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Objective}
+{
+	\footnotesize
+	\begin{itemize}
+		\item{Obtain a cooperative study for a minimum of 3 months}
+		\item{A position of Software Engineer or equivalent}
+		\item{To research, design, and implement solutions for real world problems}
+	\end{itemize}
+}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+	{ \footnotesize
+	\begin{itemize}
+		\item
+			\ressubheading{Rochester Institute of Technology - New York}{\href{http://www.rit.edu}{rit.edu}}{\href{http://www.cs.rit.edu/}{Undergraduate Computer Science Student}}{Aug. 2011 - Present}
+				{ \footnotesize
+				\begin{itemize}
+					\item{Expected Graduation Date: June 2016}
+					\item{Core Courses:}
+						\begin{itemize}
+							\item{Computer Organization}
+							\item{Computer Science[1-4]}
+                                                        \item{Intelligent Security Systems}
+							\item{Concepts of Parallel \& Distributed Systems}
+							\item{Data Communications}
+						\end{itemize}
+				\end{itemize}
+				}
+	\end{itemize} % End Education list
+	}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{{Skills}}
+{ \footnotesize
+		\begin{itemize}
+			\item{Languages: Assembly (MIPS), C, GoLang, Java, Python}
+			\item{Tools: Emacs, Git, LaTex, Subversion, Vi/Vim, Docker}
+			\item{Concepts: Parallel \& Distributed Systems, Systems Programming, Intelligent Systems}
+		\end{itemize}
+}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Professional Experience}
+{\footnotesize
+	\begin{itemize}
+               \item
+                        \ressubheading{Ntid}{\href{http://www.ntid.rit.edu/}{ntid.rit.edu}}{Backend Software Enginer}{June 2014 - Current}
+                        { \footnotesize
+                                \begin{itemize}
+                                  \item{Developed a web application for use by over 300 interpreters to track and manager their activities}
+                                  \item{Designed and implemented RESTFul API in python. }
+                                  \item{Developed a API in python using api best practices}
+                                \end{itemize}
+                        }
+
+
+	       \item
+			\ressubheading{Exablox}{\href{http://www.exablox.com/}{exablox.com}}{Continious Integration Intern}{June 2013 - January 2014}
+			{ \footnotesize
+				\begin{itemize}
+                                  \item{Worked developing internal developer resource and continuous integration systems}
+				  \item{Designed and implemented a system to manage and  test data}
+				  \item{Developed a Buildbot and ReviewBoard collaboration plugin in python}
+				\end{itemize}
+			}
+		\item	
+			\ressubheading{Computer Science House}{\href{http://www.csh.rit.edu/}{csh.rit.edu}}{Amature Systems Administrator}{Active Member} 
+			{ \footnotesize
+				\begin{itemize}		
+					\item{Yearly technical Major Project}
+				\end{itemize}
+			}		
+	\end{itemize}  % End Experience list
+}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Online Presence}
+{
+	\begin{tabularx}{2in}{XX}
+		LinkedIn: & \href{http://www.linkedin.com/in/rlguarino/}{www.linkedin.com/in/rlguarino/} \\
+		Githhub: & \href{http://www.github.com/rlguarino}{github.com/rlguarino} \\
+		Blog: & \href{http://www.rlguarino.com/}{rlguarino.com} \\
+		Twitter: & \href{https://twitter.com/rlguarino}{twitter.com/rlguarino} \\
+	\end{tabularx}
+}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Projects}
+{ \footnotesize
+	\textit{Available on {\href{http://www.github.com/rlguarino/}{github.com/rlguarino.}}}
+	\begin{itemize}
+          \item
+            \restwosubheading{Intelligent Scan Detection}{GoLang, Python}
+            \begin{itemize}
+              \item{An intelligent securety system designed to detect and respond to port scans.}
+              \item{Uses a nural network to classify traffic data as potential scans in real time. }
+              \item{Generated realistic traffic data using a process of categorizing traffic characteristics and composing fake traffic on demand.}
+            \end{itemize}
+
+		\item 
+		\restwosubheading{Unitracker }{GoLang}
+			\begin{itemize}
+				\item{A continious integration unit test tracking system built with go.}
+                                \item{Designed to be used as part of a buildbot system the Unitracker will track and display the outcome of unit tests in a easy to understand manner.}
+			\end{itemize}
+		\item		
+		\restwosubheading{Taskboard}{GoLang}
+			\begin{itemize}
+				\item{A web application designed to interface with{\href{http://csh.rit.edu}{Computer Science House} } systems to privide a way for members to pay each other co complete tasks using a special currency.} 
+			\end{itemize}
+		\item
+		\restwosubheading{PyShare}{Python}
+			\begin{itemize}
+				\item{A peer-to-peer file sharing program}
+                                \item{Implemented my own Diffie Hellman encription to secure the traffic}
+			\end{itemize}
+		\item		
+		\restwosubheading{Smart Vending Machine System}{Java}
+			\begin{itemize}
+				\item{A smart vending machine system group project for a Software Engineering class.}
+                                \item{Networked vending machine systems with an inventory management system and real time system monitoring}
+			\end{itemize}
+	\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% GENERAL RESUME NOTES %
+%%%%%%%%%%%%%%%%%%%%%%%%
+Need to brush up on the skills section?  Here are some really good ideas:
+
+- Communication: The ability to express and interpret ideas and convey knowledge. 
+Skills like speaking effectively, writing concisely, listening attentively, expressing ideas, 
+reporting information, editing, interviewing, and facilitating group discussion. 
+ 
+- Research and Planning: The ability to search for specific knowledge and formulate a 
+program for a definite course of action. Skills like forecasting, predicting, identifying 
+issues, finding alternatives, gathering information, solving problems, setting goals, 
+extracting information, and developing strategies. 
+ 
+- Human Relations: The ability to apply interpersonal skills to resolve conflict, relate to 
+people, and help people. Skills like providing support for others, listening, delegating 
+with respect, representing others, asserting, developing rapport, and perceiving 
+feelings. 
+ 
+- Management, Organization, Leadership: The ability to supervise others and guide 
+individuals and groups towards the completion of tasks. Skills like managing groups, 
+selling ideas, making decisions, managing conflict, coordinating tasks, teaching, 
+enlisting help. 
+
+Source: 
+http://www.squawkfox.com/2009/03/08/6-action-words-that-make-your-resume-rock/
+
+Other Resources: 
+http://www.tvmier.com/Resume_Education.html
