@@ -1,4 +1,4 @@
-% Ross_Guarino.tex
+% Ross_Guarino_Resume.tex
 %
 % (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
 % (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
@@ -72,7 +72,7 @@
 
 \newcommand{\mywebheader}{
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r} \\
-	\textbf{\href{http://www.rlguarino.com/}{\large Ross L. Guarino}} & \href{mailto:rlguarino@gmail.com}{rlguarino@gmail.com}\\ &
+	\textbf{\href{http://www.rlguarino.com/}{\large Ross L. Guarino}} & \href{mailto:rlguarino@gmail.com}{rssguar@gmail.com}\\ &
 	\href{http://rlguarino.com/}{rlguarino.com} \\ \vspace{-10mm} \\
 	{\footnotesize {{Current: 230 Hendrix Ave, Apartment 12,
 West Henrietta, NY 14586}}} & \\
@@ -87,13 +87,90 @@ West Henrietta, NY 14586}}} & \\
 %%%%%%%%%%%%%%%%%%%%%%
 \resheading{Objective}
 {
-	\footnotesize
 	\begin{itemize}
-		\item{Obtain a cooperative study for a minimum of 3 months}
+	\setlength\itemsep{0em}
+		\footnotesize
+		\item{Obtain full time position or cooperative study for a minimum of 3 months}
 		\item{A position of Software Engineer or equivalent}
 		\item{To research, design, and implement solutions for real world problems}
 	\end{itemize}
 }
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Professional Experience}
+{\footnotesize
+	\begin{itemize}
+		\item
+                        \ressubheading{Google Inc.}{\href{http://www.google.com/}{google.com}}{Site Reliability Engineer - Intern}{May - August 2015}
+                        { \footnotesize
+                                \begin{itemize}
+                                  \item{Fault Injection and Disaster Recovery Tools}
+                                \end{itemize}
+                        }
+
+               \item
+                        \ressubheading{Ntid}{\href{http://www.ntid.rit.edu/}{ntid.rit.edu}}{Backend Software Engineer}{June 2014 - May 2015}
+                        { \footnotesize
+                                \begin{itemize}
+                                  \item{Developed a web application for use by over 300 interpreters to track and managed their activities}
+                                  \item{Designed and implemented RESTFul API in python. }
+                                  \item{Developed a API in python using API best practices}
+                                \end{itemize}
+                        }
+
+
+	       \item
+			\ressubheading{Exablox}{\href{http://www.exablox.com/}{exablox.com}}{Continuous Integration - Intern}{June 2013 - January 2014}
+			{ \footnotesize
+				\begin{itemize}
+                                  \item{Developed internal developer resource and continuous integration systems}
+				  \item{Designed and implemented a system to manage and test data}
+				  \item{Developed a Buildbot and ReviewBoard collaboration plugin in Python}
+				\end{itemize}
+			}
+	\end{itemize}  % End Experience list
+}
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Projects}
+{ \footnotesize
+	\textit{Many Available on {\href{http://www.github.com/rlguarino/}{github.com/rlguarino}}}
+	\begin{itemize}
+          \item
+            \restwosubheading{Intelligent Scan Detection}{Go, Python}
+            \begin{itemize}
+              \item{An intelligent security system designed to detect and respond to port scans.}
+              \item{Uses a neural network to classify traffic data as potential scans in real time. }
+              \item{Generated realistic traffic data using a process of categorizing traffic characteristics and composing fake traffic on demand.}
+            \end{itemize}
+
+           \item 
+	     \restwosubheading{Unitracker }{Go}
+	     \begin{itemize}
+		\item{A continuous integration unit test tracking system built with go.}
+                \item{Designed to be used as part of a buildbot system the Unitracker will track and display the outcome of unit tests in a easy to understand manner.}
+	     \end{itemize}
+	    \item		
+	      \restwosubheading{Taskboard}{Go}
+	      \begin{itemize}
+		\item{A web application designed to interface with{\href{http://csh.rit.edu}{Computer Science House} } systems to provide a way for members to pay each other to complete tasks using a special currency.} 
+	      \end{itemize}
+	    \item
+	       \restwosubheading{PyShare}{Python}
+	       \begin{itemize}
+		 \item{A peer-to-peer file sharing program}
+                 \item{Implemented my own Diffie-Hellman encryption to secure the traffic}
+	       \end{itemize}
+	    \item		
+	      \restwosubheading{Smart Vending Machine System}{Java}
+	      \begin{itemize}
+		\item{A smart vending machine system group project for a Software Engineering class.}
+                \item{Networked vending machine systems with an inventory management system and real time system monitoring}
+	      \end{itemize}
+	\end{itemize}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%
 \resheading{Education}
 	{ \footnotesize
@@ -115,6 +192,8 @@ West Henrietta, NY 14586}}} & \\
 				}
 	\end{itemize} % End Education list
 	}
+
+
 %%%%%%%%%%%%%%%%%%%%%%
 
 \resheading{{Skills}}
@@ -125,41 +204,8 @@ West Henrietta, NY 14586}}} & \\
 			\item{Concepts: Parallel \& Distributed Systems, Systems Programming, Intelligent Systems}
 		\end{itemize}
 }
+
 %%%%%%%%%%%%%%%%%%%%%%
-\resheading{Professional Experience}
-{\footnotesize
-	\begin{itemize}
-               \item
-                        \ressubheading{Ntid}{\href{http://www.ntid.rit.edu/}{ntid.rit.edu}}{Backend Software Enginer}{June 2014 - Current}
-                        { \footnotesize
-                                \begin{itemize}
-                                  \item{Developed a web application for use by over 300 interpreters to track and managed their activities}
-                                  \item{Designed and implemented RESTFul API in python. }
-                                  \item{Developed a API in python using api best practices}
-                                \end{itemize}
-                        }
-
-
-	       \item
-			\ressubheading{Exablox}{\href{http://www.exablox.com/}{exablox.com}}{Continuous Integration Intern}{June 2013 - January 2014}
-			{ \footnotesize
-				\begin{itemize}
-                                  \item{Worked developing internal developer resource and continuous integration systems}
-				  \item{Designed and implemented a system to manage and  test data}
-				  \item{Developed a Buildbot and ReviewBoard collaboration plugin in Python}
-				\end{itemize}
-			}
-		\item	
-			\ressubheading{Computer Science House}{\href{http://www.csh.rit.edu/}{csh.rit.edu}}{Amature Systems Administrator}{Active Member} 
-			{ \footnotesize
-				\begin{itemize}		
-					\item{Yearly technical Major Project}
-				\end{itemize}
-			}		
-	\end{itemize}  % End Experience list
-}
-%%%%%%%%%%%%%%%%%%%%%%
-
 \resheading{Online Presence}
 {
 	\begin{tabularx}{2in}{XX}
@@ -170,45 +216,6 @@ West Henrietta, NY 14586}}} & \\
 	\end{tabularx}
 }
 \pagebreak
-
-%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Projects}
-{ \footnotesize
-	\textit{Available on {\href{http://www.github.com/rlguarino/}{github.com/rlguarino.}}}
-	\begin{itemize}
-          \item
-            \restwosubheading{Intelligent Scan Detection}{GoLang, Python}
-            \begin{itemize}
-              \item{An intelligent securety system designed to detect and respond to port scans.}
-              \item{Uses a nural network to classify traffic data as potential scans in real time. }
-              \item{Generated realistic traffic data using a process of categorizing traffic characteristics and composing fake traffic on demand.}
-            \end{itemize}
-
-		\item 
-		\restwosubheading{Unitracker }{GoLang}
-			\begin{itemize}
-				\item{A continious integration unit test tracking system built with go.}
-                                \item{Designed to be used as part of a buildbot system the Unitracker will track and display the outcome of unit tests in a easy to understand manner.}
-			\end{itemize}
-		\item		
-		\restwosubheading{Taskboard}{GoLang}
-			\begin{itemize}
-				\item{A web application designed to interface with{\href{http://csh.rit.edu}{Computer Science House} } systems to privide a way for members to pay each other to complete tasks using a special currency.} 
-			\end{itemize}
-		\item
-		\restwosubheading{PyShare}{Python}
-			\begin{itemize}
-				\item{A peer-to-peer file sharing program}
-                                \item{Implemented my own Diffie Hellman encription to secure the traffic}
-			\end{itemize}
-		\item		
-		\restwosubheading{Smart Vending Machine System}{Java}
-			\begin{itemize}
-				\item{A smart vending machine system group project for a Software Engineering class.}
-                                \item{Networked vending machine systems with an inventory management system and real time system monitoring}
-			\end{itemize}
-	\end{itemize}
-}
 
 %%%%%%%%%%%%%%%%%%%%%%
 
